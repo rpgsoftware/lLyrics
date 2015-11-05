@@ -69,6 +69,7 @@ class Parser(object):
         resp = resp.replace("<br/>", "")
         resp = resp.replace("</p>", "")
         resp = resp.replace("<p>", "\n")
+        resp = resp.replace(" / ", "\n")
         
         resp = HTMLParser().unescape(resp)
                 
